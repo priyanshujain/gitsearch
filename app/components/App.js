@@ -2,7 +2,7 @@ var React = require('react');
 var ReactRouter = require('react-router-dom');
 var Router = ReactRouter.BrowserRouter;
 var Route = ReactRouter.Route;
-var browserHistory = ReactRouter.browserHistory;
+var hashHistory = ReactRouter.hashHistory;
 var Switch = ReactRouter.Switch;
 
 var Nav = require('./Nav');
@@ -13,7 +13,7 @@ var Home = require('./Home');
 class App extends React.Component {
   render() {
     return (
-      <Router history={browserHistory}>
+      <Router history={hashHistory}>
         <div className='container'>
           <Nav />
           <Switch>
