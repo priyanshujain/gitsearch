@@ -1,31 +1,8 @@
 var React = require('react');
 var PropTypes = require('prop-types');
 var api = require('../utils/api');
-
-
-function RepoGrid (props) {
-  return (
-    <ul className='repo-list'>
-      {props.repos.map(function(repo, index){
-        return (
-          <li key={repo.name} className='repo-item'>
-            <div className='repo'>
-              <ul className='space-list-items'>
-                <li><a href={repo.html_url}><h2 className='repotitle'>{repo.name}</h2></a></li>
-                <li>Description: {repo.description}</li>
-                <li>{repo.stargazers_count} stars</li>
-                <li>language: {repo.language}</li>
-              </ul>
-            </div>
-          </li>
-        )
-      })}
-    </ul>
-  )
-}
-RepoGrid.propTypes = {
-  repos: PropTypes.array.isRequired
-}
+var Link = require('react-router-dom').Link;
+var RepoGrid = require('./RepoGrid');
 
 function UserPreview (props) {
   return (
@@ -142,6 +119,7 @@ class User extends React.Component {
     });
   }
   render() {
+    var match = this.props.match;
     var userName = this.state.userName;
     var userImg = this.state.userImg;
     var repos = this.state.repos;
@@ -169,6 +147,7 @@ class User extends React.Component {
           {this.state.repos !== null &&
             <RepoGrid
                repos={this.state.repos}
+               match={match}
                onReset={this.handleReset}
              />}
         </div>

@@ -9,6 +9,7 @@ var Nav = require('./Nav');
 var User = require('./User');
 var Repo = require('./Repo');
 var Home = require('./Home');
+var Results = require('./Results');
 
 class App extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class App extends React.Component {
           <Nav />
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route exact path='/user/results' component={Results} />
             <Route path='/user' component={User} />
             <Route path='/repo' component={Repo} />
             <Route render={function () {
