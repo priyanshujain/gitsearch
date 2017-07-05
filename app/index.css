@@ -1,0 +1,167 @@
+body {
+  background-image: url("https://enterprise.github.com/assets/aws/jetpack-octocat-clouds-ab3c258e0b58dc8354ebb57139827a23dcf3849d14ee8c6795a67a7bcfde9fb4.jpg");
+  font-family: Helvetica;
+}
+
+a {
+  text-decoration: none;
+  color: #d0021b;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.title{
+  display: flex;
+  font-size: 80px;
+  justify-content: center;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.space-list-items {
+  margin-bottom: 10px;
+
+}
+.repotitle {
+  font-size: 30px;
+}
+.issuetitle {
+  font-size: 20px;
+}
+
+
+.nav {
+  margin-top: 5px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav li {
+  margin-right: 15px;
+  font-size: 40px;
+}
+
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column input {
+  border-radius: 3px;
+  margin: 10px 0;
+  padding: 5px;
+  border: 3px solid rgba(0, 0, 0, 0.43);
+  font-size: 20px;
+  width: 500px;
+}
+
+.column label {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.submitbutton {
+  color: #e6e6e6;
+  background: #0a0a0a;
+  border: none;
+  font-size: 16px;
+  border-radius: 3px;
+  width: 200px;
+  text-align: center;
+  display: block;
+  padding: 7px 0;
+  margin: 10px auto;
+  margin-top: 50px;
+}
+.submitbutton:hover:enabled {
+  background: linear-gradient(#1a1a1a,#0a0a0a);
+  color: #fff;
+  text-decoration: none;
+}
+
+.submitbutton:active {
+  transform: translateY(1px);
+}
+.header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.reset {
+  border: none;
+  background: transparent;
+  color: #d0021b;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.reset:hover {
+  cursor: pointer;
+}
+
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+}
+.home {
+  display: flex;
+  justify-content: center;
+}
+.repo {
+  background: white;
+  margin-bottom: 10px;
+  padding:10px;
+  border-top: 1px solid #CCC;
+}
+
+.issue {
+  background: white;
+  margin-bottom: 10px;
+  padding:10px;
+  border-top: 1px solid #CCC;
+  width: 100%;
+}
+
+.repo-item {
+
+}
+.homeuser {
+  margin: 100px;
+}
